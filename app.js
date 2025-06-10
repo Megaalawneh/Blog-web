@@ -30,7 +30,7 @@ app.post("/check", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  if (email === "m@gmail.com" && password === "123") {
+  if (email === "m1@gmail.com" && password === "123") {
     res.render("post", { posts: posts });
   } else {
     res.render("home");
