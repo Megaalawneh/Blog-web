@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<h1 class="h11">Edit Page</h1>
+
+<form action="/edit1" method="post" class="post">
+  <input type="text" name="num" placeholder="num" required>
+  <input type="text" name="edit" placeholder="Edit text" required>
+  <button type="submit">Edit</button>
+   <a href="/post1" class="btn btn-outline-primary">
+    ← Back to
+  </a>
+</form>
+
+<%- include("partials/footer") %>

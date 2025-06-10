@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+  <div class="login">
+    <h1 class="h11">Welcome To The Post Page</h1>
+
+    <form action="/check" method="POST" class="sign">
+      <img src="https://www.svgrepo.com/show/478664/html-tag.svg" alt="HTML Logo">
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Email address" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+
+      <input type="submit" value="Login" id="log">
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+<%- include("partials/footer.ejs") %>

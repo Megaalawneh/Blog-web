@@ -1,0 +1,29 @@
+<%- include("partials/header") %>
+
+<body class="post">
+  <h1 class="h11">Welcome to the Post Page!</h1>
+
+  <form action="/post1" method="post">
+    <input type="text" name="post" placeholder="Write your post here" required>
+    <button type="submit">Add Post</button>
+  </form>
+
+  <form action="/edit" method="get">
+    <button type="submit">Go to Edit Page</button>
+  </form>
+<form action="/delete" method="post">
+  <input type="text" name="delete" placeholder="Enter post number to delete" required>
+  <button type="submit">Delete Post</button>
+</form>
+
+
+  <% if (posts && posts.length > 0) { %>
+    <ol id="olll">
+      <% posts.forEach(function(post) { %>
+        <li style="color:white;"><%= post %></li>
+      <% }) %>
+    </ol>
+  <% } %>
+</body>
+
+<%- include("partials/footer") %>
